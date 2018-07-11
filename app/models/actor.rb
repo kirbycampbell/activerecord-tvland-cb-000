@@ -8,6 +8,6 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     var = []
-    var << self.character.name + " - " self.show.name
+    var << self.characters.name + " - " self.shows.name
   end
 end
