@@ -3,6 +3,6 @@ class AddActorToCharacters < ActiveRecord::Migration[4.2]
   #a new migration, and then in the change method,
   #we make the change.
   def change
-    add_column :character, :actor_id, :integer
+    add_column :characters, :actor_id, :integer
   end
 end
