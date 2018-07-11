@@ -11,5 +11,6 @@ class Actor < ActiveRecord::Base
     self.characters.collect do |character|
       var << character.name} " - " character.show.name
     end
+    var
   end
 end
